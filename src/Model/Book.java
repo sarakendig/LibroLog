@@ -7,6 +7,7 @@ public class Book {
     private String genre;
     private String format;
     private String cover;
+    private Date readingDates;
 
     public Book(String title, String author, String genre, String format, String cover) {
         this.title = title;
@@ -56,6 +57,14 @@ public class Book {
         this.cover = cover;
     }
 
+    public Date getReadingDates() {
+        return readingDates;
+    }
+
+    public void setReadingDates(Date readingDates) {
+        this.readingDates = readingDates;
+    }
+
     @Override
     public String toString() {
         return "Book{" +
@@ -64,6 +73,7 @@ public class Book {
                 ", genre='" + genre + '\'' +
                 ", format='" + format + '\'' +
                 ", cover='" + cover + '\'' +
+                ", readingDates=" + readingDates +
                 '}';
     }
 }
